@@ -3,8 +3,8 @@ import logo from "./logo.svg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./home";
-import Login from "./components/login";
-import Signup from "./components/signup";
+import Login from "./components/login/login";
+import Signup from "./components/signup/signup";
 
 
 function App() {
