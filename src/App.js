@@ -6,22 +6,38 @@ import Home from "./home";
 import Login from "./components/login/login";
 import Signup from "./components/signup/signup";
 
-
+import Header from "./header";
+import Footer from "./footer";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/login" exact>
-            <Login />
-          </Route>
-          <Route path="/signup" exact>
-            <Signup />
-          </Route>
-        </Switch>
+      <Router forceRefresh>
+        <Route path="/" render={routeProps => <Header {...routeProps} />} />
+        <div className="app-mid">
+          <Switch>
+            <Route
+              path="/login/"
+              exact
+              render={routeProps => <Login {...routeProps} />}
+            />
+            <Route
+              path="/signup/"
+              exact
+              render={routeProps => <Signup {...routeProps} />}
+            />
+            <Route
+              path="/home/"
+              exact
+              render={routeProps => <Home {...routeProps} />}
+            />
+            <Route
+              path="/"
+              exact
+              render={routeProps => <Home {...routeProps} />}
+            />
+          </Switch>
+        </div>
+        <Footer />
       </Router>
     </div>
   );

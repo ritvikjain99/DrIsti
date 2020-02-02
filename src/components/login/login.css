@@ -4,13 +4,15 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .my-form{
     width: 20vw;    
     padding: 2em 4em;
     margin-right: 10em;
-    box-shadow: 0 0 20px 0 black;
+    box-shadow: 0 1px 2px #ccc;
 }
 .doctor{
     background-image: url("doctor.jpg");

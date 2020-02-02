@@ -1,0 +1,39 @@
+.app-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #293B52;
+    width: 100vw;
+    min-height: 40px;
+    color: #F8D16C;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+.app-logo{
+    color: #F8D16C;
+    text-transform: uppercase;
+}
+.app-logo:hover{
+    color: #F8D16C;
+    text-decoration: underline;
+}
+.app-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #293B52;
+    width: 100vw;
+    min-height: 40px;
+    color: #F8D16C;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+.app-footer *{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.logout-btn{
+    cursor: pointer;
+}
